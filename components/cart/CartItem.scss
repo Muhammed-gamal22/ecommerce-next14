@@ -1,0 +1,65 @@
+@import "../../app/responsive-manager.scss";
+.cart-item {
+  display: flex;
+  align-items: center;
+  &:not(:last-child) {
+    border-bottom: 1px solid rgb(255, 167, 3);
+  }
+  margin: 1rem 2rem;
+  justify-content: space-between;
+  @include respond(phone) {
+    flex-direction: column;
+  }
+  padding-bottom: 1rem;
+  &__products {
+    display: flex;
+    align-items: center;
+  }
+  &__image {
+    width: 15rem;
+    height: 15rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+  }
+
+  &__title {
+    font-size: 1.3rem;
+    width: 30rem;
+  }
+  &__quantity {
+    display: flex;
+    font-size: 1.7rem;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(255, 167, 3);
+    padding: 1rem;
+    width: 10rem;
+  }
+  &__add,
+  &__remove {
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(255, 167, 3);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  &__details {
+    display: flex;
+    align-items: center;
+    @include respond(phone) {
+      align-self: flex-end;
+      flex-direction: row-reverse;
+    }
+    font-size: 1.4rem;
+    gap: 2rem;
+  }
+}

@@ -1,0 +1,187 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[13].use[5]!./components/Form.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.form {
+  padding: 10rem 20rem;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+@media (max-width: 37.5em) {
+  .form {
+    width: 100%;
+    height: 100vh;
+  }
+}
+.form__logo {
+  width: 10rem;
+  height: 10rem;
+  position: relative;
+}
+.form__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.form__control {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form__input {
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+}
+.form__input:focus {
+  outline: none;
+}
+.form__input:not([type=submit]) {
+  width: 30rem;
+}
+.form__input[type=submit] {
+  background-image: linear-gradient(to right bottom, rgb(24, 24, 224), rgb(52, 52, 158));
+  color: white;
+  border-radius: 1rem;
+  cursor: pointer;
+  padding: 1rem 3rem;
+}
+.form__notification-action {
+  cursor: pointer;
+  display: inline-block;
+  color: rgb(71, 71, 255);
+  border-bottom: 1px solid rgb(71, 71, 255);
+}
+.form__email-error {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+}
+.form__password-error {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./components/Header.module.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Header_header__sSSiY {
+  background-image: url(/_next/static/media/ice-man.c2492932.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  position: relative;
+  font-size: 1.4rem;
+}
+@media (max-width: 37.5em) {
+  .Header_header__sSSiY {
+    display: none;
+    width: 0;
+  }
+}
+.Header_header__sSSiY::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+@media (max-width: 37.5em) {
+  .Header_header__sSSiY::after {
+    display: none;
+    width: 0;
+  }
+}
+
+.Header_header-text__WR4_4 {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  text-align: center;
+  color: #fff;
+}
+.Header_header-text__paragraph__kZtmF {
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: #c9c9c9;
+}
+.Header_header-text__logo-container__TXpD2 {
+  width: 10rem;
+  height: 10rem;
+  padding: 1rem;
+  background-color: #fff;
+  margin: 0px auto;
+  border-radius: 50%;
+}
+.Header_header-text__logo__fpCD7 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 0px auto;
+  padding: 3rem;
+  border-radius: 50%;
+}
+.Header_header-text__image__KADvL {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.Header_header-text__heading__pRIpK {
+  margin-bottom: 1rem;
+  font-size: 4rem;
+}
+.Header_header-text__heading__pRIpK span {
+  display: inline-block;
+  background-image: linear-gradient(105deg, #c9c9c9 0%, #c9c9c9 50%, #fff 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Header_header-text__btn__N2S1I {
+  margin-top: 20rem;
+  border: none;
+  padding: 1.5rem 6rem;
+  cursor: pointer;
+  border-radius: 10rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  position: relative;
+  animation: Header_moveInBottom__8Qhil 0.8s;
+}
+.Header_header-text__btn__N2S1I:focus {
+  outline: none;
+}
+.Header_header-text__btn__N2S1I::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  padding: 1.5rem 6rem;
+  width: 100%;
+  top: 2rem;
+  left: 0;
+  transform: scale(1.4);
+  height: 100%;
+}
+
+@keyframes Header_moveInBottom__8Qhil {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

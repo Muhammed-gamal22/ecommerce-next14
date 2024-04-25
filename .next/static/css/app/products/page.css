@@ -1,0 +1,329 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./components/HeaderProduct.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.HeaderProduct_header-content__Psio_ {
+  display: flex;
+  position: fixed;
+  z-index: 99999;
+  justify-content: space-between;
+  background-color: transparent;
+  align-items: center;
+  padding: 1rem 2rem;
+  height: 5rem;
+  width: 100%;
+  color: #000;
+  background-color: white;
+  border-bottom: 1px solid rgb(255, 167, 3);
+}
+.HeaderProduct_header-content__logo__Mpa36 {
+  font-size: 1.7rem;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+.HeaderProduct_header-content__list__FkRFV {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.HeaderProduct_header-content__list__FkRFV :not(:last-child) {
+  margin-right: 1.5rem;
+}
+.HeaderProduct_header-content__link__O4Z7Z {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+.HeaderProduct_header-content__logo__Mpa36 {
+  position: relative;
+  width: 8rem;
+  height: 8rem;
+}
+.HeaderProduct_header-content__image__AlaMI {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.HeaderProduct_header-content__bag__KFMD7 {
+  position: absolute;
+  display: flex;
+  right: 1rem;
+  top: -0.25rem;
+  color: #fff;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: rgb(255, 167, 3);
+  font-size: 0.75rem;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./components/products/Products.module.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Products_products__BZpDW {
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  animation: Products_fadeIn__CnpTb 2s;
+}
+.Products_products__title__7BUAB {
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  text-align: start;
+  margin: 2rem 2rem 0 2rem;
+  color: rgba(138, 132, 132, 0.56);
+}
+.Products_products__description__MdQU5 {
+  font-size: 0.8rem;
+}
+.Products_products__wrapper__7XnOZ {
+  overflow: hidden;
+  display: flex;
+  padding: 5rem 0;
+}
+.Products_products__icon-right__X_XgZ {
+  position: absolute;
+  font-size: 1.4rem;
+  width: 4rem;
+  height: 4rem;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  z-index: 30;
+  right: 0rem;
+  top: 20rem;
+  z-index: 999;
+  background-image: linear-gradient(to right bottom, rgb(255, 167, 3), rgb(255, 191, 71));
+  color: white;
+}
+.Products_products__icon-left__Ot_XV {
+  position: absolute;
+  left: 0;
+  font-size: 1.4rem;
+  width: 4rem;
+  height: 4rem;
+  top: 20rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  z-index: 10;
+  cursor: pointer;
+  background-image: linear-gradient(to right bottom, rgb(255, 167, 3), rgb(255, 191, 71));
+}
+
+@keyframes Products_fadeIn__CnpTb {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./components/products/ProductItem.module.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.ProductItem_product-container__pWvXi {
+  position: relative;
+  max-width: 100%;
+}
+.ProductItem_product-container__item____oZm {
+  margin-bottom: 2rem;
+  overflow: hidden;
+  background-color: white;
+  flex: 0 0 25rem;
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2rem;
+  margin-right: 2rem;
+  border-radius: 8px;
+  transition: all 0.5s;
+  position: relative;
+}
+.ProductItem_product-container__item____oZm:hover {
+  transform: scale(1.1);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+}
+.ProductItem_product-container__item-icon__d_Sf0 {
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  width: 3rem;
+  height: 3rem;
+  color: rgb(69, 113, 255);
+  cursor: pointer;
+}
+.ProductItem_product-container__item-fav__NH3KI {
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  width: 3rem;
+  height: 3rem;
+  color: rgb(69, 113, 255);
+  cursor: pointer;
+}
+.ProductItem_product-container__item____oZm:hover .ProductItem_product-container__link__QS_8s {
+  opacity: 1;
+}
+.ProductItem_product-container__link__QS_8s {
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  background-image: linear-gradient(to right bottom, rgb(255, 167, 3), rgb(255, 191, 71));
+  width: 100%;
+  opacity: 0;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.ProductItem_product-container__image__vrA0A {
+  width: 20rem;
+  height: 20rem;
+  position: relative;
+  background-color: #fff;
+  padding: 1rem;
+}
+.ProductItem_product-container__item-title__4dsOy {
+  font-size: 0.8rem;
+}
+.ProductItem_product-container__item-price__6RCFI {
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(69, 113, 255);
+  padding: 1rem;
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[13].use[5]!./components/Slider.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.slider {
+  height: calc(100% - 5rem);
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.slider__container {
+  display: flex;
+  width: 300vw;
+  height: 100vh;
+  transition: transform 1s;
+}
+@media (max-width: 37.5em) {
+  .slider__container {
+    height: 70vh;
+  }
+}
+.slider__image-content {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.slider__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 20rem;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
+.slider__actions {
+  margin-top: 4rem;
+  gap: 3rem;
+  display: flex;
+}
+.slider__btn-link {
+  display: inline-block;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  background-color: #fff;
+  border-radius: 2rem;
+}
+.slider__btn-link--1 {
+  color: rgb(255, 167, 3);
+}
+.slider__btn-link--2 {
+  background-color: rgb(255, 167, 3);
+  color: #fff;
+}
+.slider__title {
+  margin-bottom: 2rem;
+  display: inline-block;
+  font-size: 4rem;
+  background-image: linear-gradient(105deg, rgb(255, 167, 3) 0%, rgb(255, 167, 3) 50%, #fff 50%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+@media (max-width: 37.5em) {
+  .slider__title {
+    font-size: 2rem;
+  }
+}
+.slider__desc {
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: inline-block;
+  background-image: linear-gradient(105deg, rgb(255, 167, 3) 0%, rgb(255, 167, 3) 50%, #fff 50%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+@media (max-width: 37.5em) {
+  .slider__desc {
+    font-size: 1rem;
+  }
+}
+.slider__img {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+}
+.slider__img::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.slider__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.slider__btn {
+  width: 4em;
+  height: 4rem;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  z-index: 100;
+}
+.slider__btn--left {
+  left: 2rem;
+}
+.slider__btn--right {
+  right: 2rem;
+}
+.slider__icon {
+  color: #fff;
+}

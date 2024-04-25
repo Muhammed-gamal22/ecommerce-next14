@@ -1,0 +1,226 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[13].use[5]!./components/cart/CartItem.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin: 1rem 2rem;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+.cart-item:not(:last-child) {
+  border-bottom: 1px solid rgb(255, 167, 3);
+}
+@media (max-width: 37.5em) {
+  .cart-item {
+    flex-direction: column;
+  }
+}
+.cart-item__products {
+  display: flex;
+  align-items: center;
+}
+.cart-item__image {
+  width: 15rem;
+  height: 15rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2rem;
+}
+.cart-item__title {
+  font-size: 1.3rem;
+  width: 30rem;
+}
+.cart-item__quantity {
+  display: flex;
+  font-size: 1.7rem;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(255, 167, 3);
+  padding: 1rem;
+  width: 10rem;
+}
+.cart-item__add, .cart-item__remove {
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  background-color: rgb(255, 167, 3);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.cart-item__details {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  gap: 2rem;
+}
+@media (max-width: 37.5em) {
+  .cart-item__details {
+    align-self: flex-end;
+    flex-direction: row-reverse;
+  }
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[13].use[5]!./components/cart/Cart.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.cart {
+  max-width: 114rem;
+  margin: 0 auto;
+  padding: 10rem 0;
+}
+@media (max-width: 75em) {
+  .cart {
+    max-width: 90rem;
+    padding: 10rem 2rem;
+  }
+}
+@media (max-width: 56.25em) {
+  .cart {
+    max-width: 60rem;
+    margin: 0;
+    padding: 10rem 1rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .cart {
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+}
+.cart__wrapper {
+  display: flex;
+  gap: 2rem;
+}
+@media (max-width: 37.5em) {
+  .cart__wrapper {
+    flex-direction: column;
+  }
+}
+.cart__heading {
+  margin-bottom: 2rem;
+}
+
+.cart-products {
+  flex: 0 0 75%;
+  border: 1px solid rgb(255, 167, 3);
+}
+@media (max-width: 56.25em) {
+  .cart-products {
+    flex: 0 0 70%;
+  }
+}
+@media (max-width: 37.5em) {
+  .cart-products {
+    flex: 0 0 100%;
+  }
+}
+.cart-products__heading {
+  margin: 2rem;
+}
+.cart-products__wrapper {
+  list-style: none;
+}
+
+.cart-order {
+  flex: 0 0 25%;
+  border: 1px solid rgb(255, 167, 3);
+  align-self: flex-start;
+  padding: 1rem;
+}
+@media (max-width: 56.25em) {
+  .cart-order {
+    flex: 0 0 30%;
+  }
+}
+@media (max-width: 37.5em) {
+  .cart-order {
+    flex: 0 0 100%;
+    align-self: stretch;
+  }
+}
+.cart-order__total {
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+.cart-order__checkout {
+  background-color: black;
+  color: #fff;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 3rem;
+  padding: 1rem;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./components/HeaderProduct.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.HeaderProduct_header-content__Psio_ {
+  display: flex;
+  position: fixed;
+  z-index: 99999;
+  justify-content: space-between;
+  background-color: transparent;
+  align-items: center;
+  padding: 1rem 2rem;
+  height: 5rem;
+  width: 100%;
+  color: #000;
+  background-color: white;
+  border-bottom: 1px solid rgb(255, 167, 3);
+}
+.HeaderProduct_header-content__logo__Mpa36 {
+  font-size: 1.7rem;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+.HeaderProduct_header-content__list__FkRFV {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.HeaderProduct_header-content__list__FkRFV :not(:last-child) {
+  margin-right: 1.5rem;
+}
+.HeaderProduct_header-content__link__O4Z7Z {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+.HeaderProduct_header-content__logo__Mpa36 {
+  position: relative;
+  width: 8rem;
+  height: 8rem;
+}
+.HeaderProduct_header-content__image__AlaMI {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.HeaderProduct_header-content__bag__KFMD7 {
+  position: absolute;
+  display: flex;
+  right: 1rem;
+  top: -0.25rem;
+  color: #fff;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: rgb(255, 167, 3);
+  font-size: 0.75rem;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}

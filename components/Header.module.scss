@@ -1,0 +1,124 @@
+@import "../app/responsive-manager.scss";
+.header {
+  background-image: url("../public/ice-man.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  position: relative;
+  font-size: 1.4rem;
+  @include respond(phone) {
+    display: none;
+    width: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    @include respond(phone) {
+      display: none;
+      width: 0;
+    }
+  }
+}
+
+.header-text {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  text-align: center;
+  color: #fff;
+  &__paragraph {
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: #c9c9c9;
+  }
+
+  &__logo-container {
+    width: 10rem;
+    height: 10rem;
+    padding: 1rem;
+    background-color: #fff;
+    margin: 0px auto;
+    border-radius: 50%;
+  }
+
+  &__logo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 0px auto;
+    padding: 3rem;
+    border-radius: 50%;
+  }
+
+  &__image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  &__heading {
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    span {
+      display: inline-block;
+      background-image: linear-gradient(
+        105deg,
+        #c9c9c9 0%,
+        #c9c9c9 50%,
+        #fff 50%
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  &__btn {
+    // justify-self: end;
+    margin-top: 20rem;
+    border: none;
+    padding: 1.5rem 6rem;
+    cursor: pointer;
+    border-radius: 10rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    position: relative;
+    &:focus {
+      outline: none;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      padding: 1.5rem 6rem;
+      width: 100%;
+      top: 2rem;
+      left: 0;
+      transform: scale(1.4);
+      height: 100%;
+    }
+    animation: moveInBottom 0.8s;
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

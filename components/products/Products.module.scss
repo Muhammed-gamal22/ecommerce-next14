@@ -1,0 +1,75 @@
+.products {
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  position: relative;
+
+  &__title {
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    text-align: start;
+    margin: 2rem 2rem 0 2rem;
+    color: rgba(138, 132, 132, 0.56);
+  }
+  &__description {
+    font-size: 0.8rem;
+  }
+  &__wrapper {
+    overflow: hidden;
+    display: flex;
+    padding: 5rem 0;
+  }
+
+  &__icon-right {
+    position: absolute;
+    font-size: 1.4rem;
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 30;
+    right: 0rem;
+    top: 20rem;
+    z-index: 999;
+    background-image: linear-gradient(
+      to right bottom,
+      rgb(255, 167, 3),
+      rgb(255, 191, 71)
+    );
+    color: white;
+  }
+
+  &__icon-left {
+    position: absolute;
+    left: 0;
+    font-size: 1.4rem;
+    width: 4rem;
+    height: 4rem;
+    top: 20rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 10;
+    cursor: pointer;
+    background-image: linear-gradient(
+      to right bottom,
+      rgb(255, 167, 3),
+      rgb(255, 191, 71)
+    );
+  }
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
