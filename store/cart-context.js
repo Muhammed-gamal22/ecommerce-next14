@@ -75,13 +75,15 @@ export const CartContextProvider = ({ children }) => {
     initialCartState,
     () => {
       if (typeof window !== "undefined") {
-        const storedCart = window.localStorage.getItem("cart");
+        const storedCart = localStorage.getItem("cart");
         return storedCart ? JSON.parse(storedCart) : { items: [] };
       }
     }
   );
   useEffect(() => {
-    window.localStorage.setItem("cart", JSON.stringify(cartState));
+    if (typeof window !== "undefined") {
+      window.localStorage.setItem("cart", JSON.stringify(cartState));
+    }
   }, [cartState]);
 
   const addItem = (item) => {
@@ -97,7 +99,7 @@ export const CartContextProvider = ({ children }) => {
   return (
     <CartContext.Provider
       value={{
-        items: cartState.items,
+        items: cartState?.items,
         addItem,
         removeItem,
         resetCart: handleReset,
@@ -109,31 +111,3 @@ export const CartContextProvider = ({ children }) => {
 };
 
 export default CartContext;
-
-// import { createSlice } from "@reduxjs/toolkit";
-// const CartSlice = createSlice({
-//   name: "cart",
-//   initialState: {
-//     items: [],
-//   },
-//   reducers: {
-//     addItem(state, action) {
-//       const existingCartItemIndex = state.items.findIndex(
-//         (item) => item.id === action.payload.id
-//       );
-//       if (existingCartItemIndex > -1) {
-//         const cartItem = {
-//           ...state[existingCartItemIndex],
-//           quantity: state.items[existingCartItemIndex].quantity + 1,
-//         };
-//         state.items[existingCartItemIndex] = cartItem;
-//       } else {
-//         state.items.push({ ...action.payload, quantity: 1 });
-//       }
-//     },
-//     removeItem() {},
-//   },
-// });
-// export const cartActions = CartSlice.actions;
-// console.log(cartActions);
-// export default CartSlice;

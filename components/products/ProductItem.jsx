@@ -23,11 +23,11 @@ import {
 } from "@mui/icons-material";
 import FavouriteContext from "@/store/fav-context";
 const ProductItem = ({ product }) => {
-  const { addItem, removeFavourite } = useContext(CartContext);
+  const { addItem } = useContext(CartContext);
   const { favourites, removeItemFromFavourites, addItemToFavourites } =
     useContext(FavouriteContext);
 
-  const isFavourite = favourites.some((fav) => fav.id === product.id);
+  const isFavourite = favourites?.some((fav) => fav.id === product.id);
   console.log(isFavourite);
   const addToCartHandler = (item) => {
     addItem(item);

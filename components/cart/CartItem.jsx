@@ -46,7 +46,3 @@ const CartItem = ({ item }) => {
   );
 };
 export default CartItem;
-
-// <button onClick={() => addItem(item)}>+</button>
-//         <span>{item.quantity}</span>
-//         <button onClick={() => removeItem(item.id)}>-</button>

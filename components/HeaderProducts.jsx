@@ -15,7 +15,7 @@ const HeaderProducts = () => {
   const { logout } = useContext(UserContext);
   const { resetFavourites } = useContext(FavouriteContext);
   let cartLength = 0;
-  for (let i = 0; i < items.length; i++) {
+  for (let i = 0; i < items?.length; i++) {
     cartLength += items[i].quantity;
   }
   return (
