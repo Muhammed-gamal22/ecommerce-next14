@@ -13,8 +13,7 @@ const Products = ({ products }) => {
   const productsRef = useRef();
 
   useEffect(() => {
-    console.log(user);
-    if (!user) {
+    if (typeof window !== undefined && typeof user === "string" && !user) {
       redirect("/");
     }
   }, [user]);

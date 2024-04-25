@@ -8,8 +8,10 @@ const FavouriteContext = createContext({
 });
 
 const getInitialState = () => {
-  const storedFavourites = localStorage.getItem("favourites");
-  return storedFavourites ? JSON.parse(storedFavourites) : [];
+  if (typeof window !== "undefined") {
+    const storedFavourites = window.localStorage.getItem("favourites");
+    return storedFavourites ? JSON.parse(storedFavourites) : [];
+  }
 };
 export const FavouriteContextProvider = ({ children }) => {
   const [favourites, setFavourites] = useState(getInitialState);

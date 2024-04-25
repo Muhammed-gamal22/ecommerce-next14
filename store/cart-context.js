@@ -74,12 +74,14 @@ export const CartContextProvider = ({ children }) => {
     cartReducer,
     initialCartState,
     () => {
-      const storedCart = localStorage.getItem("cart");
-      return storedCart ? JSON.parse(storedCart) : { items: [] };
+      if (typeof window !== "undefined") {
+        const storedCart = window.localStorage.getItem("cart");
+        return storedCart ? JSON.parse(storedCart) : { items: [] };
+      }
     }
   );
   useEffect(() => {
-    localStorage.setItem("cart", JSON.stringify(cartState));
+    window.localStorage.setItem("cart", JSON.stringify(cartState));
   }, [cartState]);
 
   const addItem = (item) => {

@@ -5,12 +5,14 @@ const UserContext = createContext({
   login: (userStatus) => {},
   logout: () => {},
 });
-const getInitialState = () => {
-  const storedUser = localStorage.getItem("user");
-  return storedUser;
-};
+
 export const UserContextProvider = ({ children }) => {
-  const [user, setUser] = useState(getInitialState);
+  const [user, setUser] = useState(() => {
+    if (typeof window !== "undefined") {
+      const storedUser = window.localStorage.getItem("user");
+      return storedUser;
+    }
+  });
   const handleLogin = (userStatus) => {
     setUser(userStatus);
   };
